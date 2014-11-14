@@ -1,0 +1,124 @@
+#game{
+    width: 100%;
+
+    text-align: center;
+}
+
+header{
+    
+    padding: 0.6em;
+    
+    text-align: center;
+    font-size: 1.2em;
+
+    color: white;
+    background-color: #00bcd4;
+
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+
+    span{
+        display: block;
+    }
+
+    #score{
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+}
+
+#gameBoard{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+
+.row{
+
+    td{
+        padding: 0.4em;
+
+        font-size: 4em;
+        
+        text-align: center;
+
+        cursor: pointer;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+        border-right: 2px solid rgba(0, 0, 0, 0.87);
+        span:after{
+            content: "X";
+            color: transparent;
+            
+        }
+        &.free{
+            span:after{
+                transform: scale(0.1);
+                color: transparent;
+                transition: all linear 0.2s;
+            }
+            
+            &.notTurn{
+                cursor: not-allowed;
+                span:after{
+                    content: "X";
+                }
+            }
+
+            &.player0{
+                span:after{
+                    content: "X";
+                }
+                &:hover, &:active{
+                    span:after{
+                        color: rgba(255,64,128,0.5);
+                        transform: scale(1);
+                    }
+                }
+            }
+
+            &.player1{
+                span:after{
+                    content: "O";
+                }
+                
+                &:hover, &:active{
+                    span:after{
+                        color: rgba(0,188,212,0.5);
+                        transform: scale(1);
+                    }
+                }
+            }
+            
+        }
+
+        &.filled{
+            span:after{
+                text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+            }
+
+            &.player0 span:after{
+                content: "X";
+                color: rgba(255,64,128,1);
+            }
+
+            &.player1 span:after{
+                content: "O";
+                color: rgba(0,188,212,1);
+            }
+        }
+    
+    }
+    &:last-of-type td{
+        border-bottom: 0;
+    }
+
+    & td:last-of-type{
+        border-right: 0;
+    }
+}
+
+#gameLog{
+    width: 100%;
+}

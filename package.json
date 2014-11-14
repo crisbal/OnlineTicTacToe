@@ -1,0 +1,15 @@
+{
+  "name": "tic-tac-toe-multiplayer",
+  "version": "0.0.0",
+  "description": "A multiplayer, browser based, tic-tac-toe game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Baldi",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.10.2",
+    "socket.io": "~1.2.0"
+  }
+}

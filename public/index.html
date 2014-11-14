@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Tic Tac Toe</title>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="script/socketio.js"></script>
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:500,400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div id="intro">
+        <div id="introContent">
+            <span id="title">Online Tic Tac Toe</span>
+            <form id="joinRoomForm">
+                <input type="text" id="roomName" placeholder="Room Name Here..." required autocomplete="off" autofocus>
+                <br><br>
+                <input type="submit" class="purple" value="Join room and play!">
+            </form>
+        </div>
+    </div>
+    <div id="game" class="hidden">
+        <header>
+            <span id="score">0 - 0</span>
+        </header>
+        <div id="tableContainer">
+        </div>
+        <br>
+        <button id="gameStatus" class="purple">Choose a room</button>
+        <br>
+        <div id="rematch" class="hidden">
+            <span>Do you want to play again?</span>
+            <br>
+            <button class="purple" id="yesRematch">Yes</button>
+            <button class="purple" id="noRematch">No</button>
+        </div>
+    </div>
+    <script src="script/ttt.js"></script>
+</body>
+</html>
