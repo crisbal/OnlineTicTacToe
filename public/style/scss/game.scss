@@ -8,7 +8,7 @@ header{
     
     padding: 0.6em;
     
-    text-align: center;
+    text-align: left;
     font-size: 1.2em;
 
     color: white;
@@ -26,6 +26,12 @@ header{
         font-size: 1.5em;
         font-weight: bold;
     }
+
+    #title{
+            display: block;
+            font-size: 1.5em;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.75);
+        }
 }
 
 #gameBoard{
