@@ -19,8 +19,16 @@ You can play TicTacToe with no problems, you can't cheat because everything is s
 I have to fix what happens if someone leaves a room while playing, right now the game will still continue and not pause / restart. The code is a bit messy but I hope you can understand everthing.
 
 
+#Run it locallly!
+
+Just have Node installed as well as the packages specified as dependencies in "package.json" then run
+
+    node app.js
 
 
+#LICENSE
+
+GPL
 
 
 
